@@ -1,0 +1,6 @@
+1. ARP is not secure
+2. ARP - clients identify on same adderss and get their MAC address
+
+
+arp -a 
+

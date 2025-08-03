@@ -1,0 +1,13 @@
+ARP - ADDRESS RESOLUTION PROTOCOL  - MAC TO IP (link)
+MAC - Physical address on devices
+It broadcast MAC address
+Typicall response from devices: MY IP is ... | My MAC is ...
+
+Terminal with netdiscover:
+
+netdiscover -r 10.0.2.1/24
+
+# shows all connected clients to the same network
+# it would be beneficial to have wireless adapter
+
+
