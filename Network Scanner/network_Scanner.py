@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# python3 network_scanner.py -t inet.1/24
+# działa! :-)
 
 import scapy.all as scapy 
 import argparse 
@@ -22,7 +24,7 @@ def scan(ip):
         client_dict = {"ip":element[1].psrc, "mac":element[1].hwsrc}
         clients_list.append(client_dict)
 
-        print(element[1].psrc + "\t\t" + element[1].hwsrc)
+        # print(element[1].psrc + "\t\t" + element[1].hwsrc)
     
     return clients_list
 
